@@ -5,6 +5,13 @@ import shoppingBag from "/assets/images/shopping-bag.png";
 import image from "/assets/images/image.png";
 
 const Navbar = () => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="flex justify-around items-center mt-5">
@@ -14,24 +21,28 @@ const Navbar = () => {
               <a
                 href="#home"
                 className="no-underline text-[#15534b] font-normal text-xl hover:text-[#000000] hover:underline"
+                onClick={() => scrollToSection("home")}
               >
                 Home
               </a>
               <a
                 href="#collection"
                 className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
+                onClick={() => scrollToSection("collection")}
               >
                 Collection
               </a>
               <a
                 href="#blogs"
                 className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
+                onClick={() => scrollToSection("blogs")}
               >
                 Blogs
               </a>
               <a
                 href="#contact"
                 className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
+                onClick={() => scrollToSection("contact")}
               >
                 Contact
               </a>

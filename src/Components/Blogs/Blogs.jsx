@@ -8,7 +8,7 @@ import image from "/assets/images/image.png";
 
 const Blogs = () => {
   return (
-    <div className="w-full  mt-44 ">
+    <div id="blogs" className="w-full  mt-44 ">
       <h1 className="font-moglan text-[#13524A] text-[20px] text-center">
         Read Our Blogs & News
       </h1>

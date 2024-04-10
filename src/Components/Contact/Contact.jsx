@@ -8,7 +8,7 @@ import instagram5 from "/assets/images/instagram5.png";
 
 const Contact = () => {
   return (
-    <div className="w-full flex">
+    <div id="contact" className="w-full flex">
       <div className="w-[830px] relative">
         <h1 className="text-[33px] font-moglan text-[#13524a] mt-[186px] ml-[103px]">
           INSTAGRAM

@@ -18,7 +18,7 @@ const Collection = () => {
   };
 
   return (
-    <div className="w-full  mt-28">
+    <div id="collection" className="w-full  mt-28">
       <h1 className="text-6xl text-[#13524a] font-normal text-center font-moglan ">
         Collections
       </h1>
