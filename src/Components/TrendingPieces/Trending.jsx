@@ -18,7 +18,7 @@ const Trending = () => {
       <h1 className="text-center font-normal text-[80px] leading-[107px] text-[#13524a] font-moglan">
         Trending Pieces
       </h1>
-      <div className="w-full h-[600px] grid grid-cols-3 items-center justify-items-center gap-8">
+      <div className="w-full h-[600px] grid grid-cols-3  items-center justify-items-center gap-8">
         {trendingItems.map((item, index) => (
           <div
             key={index}

@@ -1,24 +1,22 @@
-import Navbar from "./Components/navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
-import Collection from "./Components/collection/Collection.jsx";
-import Trending from "./Components/TrendingPieces/Trending.jsx";
-import Engagement from "./Components/Engagement/Engagement.jsx";
-import Blogs from "./Components/Blogs/Blogs.jsx";
-import Contact from "./Components/Contact/Contact.jsx";
-import Footer from "./Components/Footer/Footer.jsx";
+  import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Ring from "./Components/Ring/Ring.jsx";
+import Home from "./Components/Home/Home.jsx";
+import Earrings from "./Components/Earrings/Earrings.jsx";
+import RingDescription from "./Components/Ringdescription/RingDescription.jsx";
+
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Collection />
-      <Trending />
-      <Engagement />
-      <Blogs />
-      <Contact />
-      <Footer/>
-    </>
+    <BrowserRouter>
+     
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/rings" element={<Ring />} />
+        <Route path="/ring/:id" element={<RingDescription/>}/>
+        <Route path="earrings" element={<Earrings/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

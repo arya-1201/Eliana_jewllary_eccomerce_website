@@ -1,7 +1,7 @@
-let data = [
+let product = [
   {
     id: 1,
-    name: "Ring1",
+    name: "Bold Statement Finger Ring For Men",
     description:
       "This bold and sophisticated finger ring for men featuring nine precious gemstones and diamonds is a standout accessory for any occasion. The stylish design is perfect for the modern man who appreciates a distinctive look for his daily wear.",
     price: 10000.0,
@@ -15,7 +15,7 @@ let data = [
   },
   {
     id: 2,
-    name: "Ring2",
+    name: "Hexagonal Maze Finger Ring For Men",
     description:
       "Express your uniquely individualistic style with this quirky hexagonal diamond center finger ring which makes a statement of its own and ensures you always stand out in a crowd. Set your own trends and bask in glory daily with this fashionable ring.",
     price: 8000.0,
@@ -29,7 +29,7 @@ let data = [
   },
   {
     id: 3,
-    name: "Ring3",
+    name: "Glamourous Dazzle Finger Ring For Men",
     description:
       "An arresting design of diamonds with a tiny silver center sets this ring apart. A symbol of refined elegance, this ring effortlessly transitions from formal occasions to casual settings, adding a touch of sophistication to your everyday style.",
     price: 12000.0,
@@ -43,7 +43,7 @@ let data = [
   },
   {
     id: 4,
-    name: "Ring4",
+    name: "Vogueish Charm Platinum Ring For Men",
     description:
       "xuding vogueish charm and endearing allure, this platinum ring is meticulously crafted for the connoisseur with refined taste. Infusing an extra edge of sophistication, it transcends the fleeting trends.",
     price: 15000.0,
@@ -57,7 +57,7 @@ let data = [
   },
   {
     id: 5,
-    name: "Ring5",
+    name: "Dazzling Radiance Finger Ring For Men",
     description:
       "A stunningly patterned rose gold band gently nestles the dazzling brilliance of diamonds in this one of a kind finger ring which exudes luxurious panache. Pair it effortlessly with any daily attire to make your mark with this symbol of confidence.",
     price: 18000.0,
@@ -71,7 +71,7 @@ let data = [
   },
   {
     id: 6,
-    name: "Ring6",
+    name: "Bold Star Power Ring",
     description:
       "Don't shy away from making an edgy statement when you adorn this bold ring with black enamel and star motif!",
     price: 20000.0,
@@ -85,7 +85,7 @@ let data = [
   },
   {
     id: 7,
-    name: "Ring7",
+    name: "Sublime Enamelled Ring for Men",
     description:
       "This sublime ring is simple yet impactful accessory for the man who wishes to make an unforgettable style statement wherever he goes!",
     price: 22000.0,
@@ -99,7 +99,7 @@ let data = [
   },
   {
     id: 8,
-    name: "Ring8",
+    name: "Dapper Charm Ring For Men",
     description:
       "Bring in dapper charm to your look with this enchanting men's gold ring, a meaningful symbol of contemporary allure and timeless sophistication.",
     price: 25000.0,
@@ -113,12 +113,12 @@ let data = [
   },
   {
     id: 9,
-    name: "Gleaming Flower Diamond Ring",
+    name: "Gleaming Flower Diamond Ring ",
     description:
       "The lush beauty of this floral ring is designed to give your style a flourish of glamour. Indulge in the grace of nature and leave everyone bedazzled with this piece.",
     price: 10000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring1.webp",
+    image: "/assets/images/Ring/WomenRing/Ring1.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Office Wear",
@@ -131,7 +131,7 @@ let data = [
       "This ring carries a flower motif that's encrusted with shimmering diamonds. Its artistic allure is just what you need to elevate your daily style!",
     price: 8000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring2.webp",
+    image: "/assets/images/Ring/WomenRing/Ring2.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Office Wear",
@@ -144,7 +144,7 @@ let data = [
       "Unique, eclectic and oh, so charming! The square patterns and dazzling diamonds in this ring will never fail to make you stand out from the crowd!",
     price: 12000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring3.webp",
+    image: "/assets/images/Ring/WomenRing/Ring3.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Casual Wear",
@@ -157,7 +157,7 @@ let data = [
       "Classy, curvy and built to last, this glossy finished diamond ring will go great with your everyday wear. The perfect gift for the everyday woman.",
     price: 15000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring4.webp",
+    image: "/assets/images/Ring/WomenRing/Ring4.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Casual Wear",
@@ -170,7 +170,7 @@ let data = [
       "Sleek and striking, this geometric ring with carvings is designed to illuminate your everyday style. The perfect accessory for fashionable lady.",
     price: 18000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring5.webp",
+    image: "/assets/images/Ring/WomenRing/Ring5.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Modern Wear",
@@ -183,7 +183,7 @@ let data = [
       "A unique ring for a unique personality! Look sophisticated in every outfit on every occasion when you adorn this stacked ring!",
     price: 20000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring6.webp",
+    image: "/assets/images/Ring/WomenRing/Ring6.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Modern Wear",
@@ -196,7 +196,7 @@ let data = [
       "This set has a central ring with a charming knot pattern, stacked above three minimal rings. This glamorous design is impossible to ignore!",
     price: 22000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring7.webp",
+    image: "/assets/images/Ring/WomenRing/Ring7.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Modern Wear",
@@ -209,7 +209,7 @@ let data = [
       "The perfect choice for your next party ensemble, this two-head ring has been crafted masterfully to complement all your moods.",
     price: 25000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring8.webp",
+    image: "/assets/images/Ring/WomenRing/Ring8.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Casual Wear",
@@ -222,7 +222,7 @@ let data = [
       "Add a touch of grace to your new beginning with this surreal ring. Crafted beautifully, this design is artistic and charming and calls for attention.",
     price: 30000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring9.webp",
+    image: "/assets/images/Ring/WomenRing/Ring9.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Modern Wear",
@@ -235,7 +235,7 @@ let data = [
       "Make a promise to yourself to always stay on top of your fashion game and flaunt your charming style with this finger ring that completes your look. The only piece of jewellery you'll need to make your mark, this ring is designed for every day.",
     price: 35000.0,
     quantity: 1,
-    image: "/assets/images/Ring/Women/Ring10.webp",
+    image: "/assets/images/Ring/WomenRing/Ring10.webp",
     category: "Rings",
     gender: "Women",
     occasion: "Modern Wear",
@@ -253,7 +253,7 @@ let data = [
     price:60000,
   },
   {
-    name: "Sophisticated Dainty Diamond Drop Earrings",
+    name: " Dainty Diamond Drop Earrings",
     productDetails: "Timelessly elegant, this pair of earrings add to your charming appeal. An ideal choice for everyday wear, these danglers are effortlessly casual.",
     gender: "Women",
     id: 20,
@@ -311,7 +311,7 @@ let data = [
     price:55000,
   },
   {
-    name: "Radiant Simplicity Diamond Stud Earrings",
+    name: "Radiant Diamond Stud Earrings",
     productDetails: "Elevate your style sensibilities with these diamond-studded stud earrings, seamlessly blending contemporary flair with timeless elegance.",
     gender: "Women",
     productType: "Studs",
@@ -346,7 +346,7 @@ let data = [
     price:120000,
   },
   {
-    name: "Essential Elegance Diamond Stud Earrings",
+    name: "Essential  Diamond Stud Earrings",
     productDetails: "Unveil the charm of these diamond stud earrings, meticulously designed to complement her style sensibilities with their timeless elegance and sophisticated allure.",
     gender: "Women",
     productType: "Studs",
@@ -659,3 +659,4 @@ let data = [
     price:20000,
   },
 ];
+export default product;

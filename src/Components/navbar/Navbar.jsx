@@ -4,6 +4,7 @@ import heart from "/assets/images/heart.png";
 import shoppingBag from "/assets/images/shopping-bag.png";
 import image from "/assets/images/image.png";
 
+
 const Navbar = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -19,12 +20,12 @@ const Navbar = () => {
           <ul>
             <li className="flex gap-8 list-none leading-7 font-moglan">
               <a
-                href="#home"
                 className="no-underline text-[#15534b] font-normal text-xl hover:text-[#000000] hover:underline"
                 onClick={() => scrollToSection("home")}
               >
                 Home
               </a>
+
               <a
                 href="#collection"
                 className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
