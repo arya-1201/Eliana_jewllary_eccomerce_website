@@ -1,22 +1,20 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import product from '../Data'; // Assuming your data is stored in this file
-
+import product from '../Data'; 
 const RingDescription = () => {
- const { id } = useParams(); // Get the ring ID from the URL
- const ring = product.find(item => item.id === parseInt(id)); // Find the ring by ID
-
+ const { id } = useParams(); 
+ const ring = product.find(item => item.id === parseInt(id)); 
  if (!ring) {
     return <div className="text-center">Ring not found</div>;
  }
 
 
  const handleBack = () => {
-    window.history.back(); // Navigate back to the previous page using window.history.back()
+    window.history.back(); 
  };
 
  return (
-    <div className="max-w-7xl mx-auto p-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg">
+    <div className="max-w-7xl mx-auto p-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg mt-10">
       <div className="flex flex-wrap -mx-2">
         <div className="w-full md:w-1/2 px-2">
           <img src={ring.image} alt={ring.name} className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fadeIn" />
@@ -35,7 +33,7 @@ const RingDescription = () => {
             <button  className="bg-white text-green-500 hover:bg-green-500 hover:text-white font-bold py-2 px-4 rounded">
               Add to Cart
             </button>
-            <button onClick={handleBack} className="bg-white text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-2 px-4 rounded">
+            <button onClick={handleBack}   className="bg-white text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-2 px-4 rounded">
               Back to Page
             </button>
           </div>

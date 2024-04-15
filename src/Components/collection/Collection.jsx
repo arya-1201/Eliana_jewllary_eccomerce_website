@@ -26,7 +26,7 @@ const Collection = () => {
 
       <div className="w-full h-[400px] flex items-center justify-around mt-12">
         <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative ">
-          <Link to="/rings">
+          <Link to={`/collection/Rings`}>
             <img
               className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
               src={girl2}
@@ -41,7 +41,7 @@ const Collection = () => {
         </div>
 
         <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative  ">
-        <Link to={"/earrings"}>
+        <Link to={`/collection/earrings`}>
           <img
             className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
             src={girl3}
@@ -51,11 +51,12 @@ const Collection = () => {
             <h1 className=" absolute text-[40px] top-[230px] left-6 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
               EARRINGS
             </h1>
-          </div>
+          </div>  
           </Link>
         </div>
 
         <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative  ">
+        <Link to={`collection/pendants`}>
           <img
             className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
             src={girl4}
@@ -66,9 +67,11 @@ const Collection = () => {
               PENDANTS
             </h1>
           </div>
+          </Link>
         </div>
 
         <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative">
+        <Link to={`/collection/bracelet`}>
           <img
             className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
             src={girl5}
@@ -79,9 +82,11 @@ const Collection = () => {
               BRACELETS
             </h1>
           </div>
+          </Link>
         </div>
 
         <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative">
+        <Link to={`/collection/necklace`}>
           <img
             className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
             src={girl6}
@@ -92,6 +97,7 @@ const Collection = () => {
               NECKLACE
             </h1>
           </div>
+          </Link>
         </div>
       </div>
       {showSecondSet && (

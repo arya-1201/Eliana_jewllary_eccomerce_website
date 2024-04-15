@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
-import product from "../Data";
+import { useParams } from "react-router-dom";
+import product from "../Components/Data";
 import { Link } from "react-router-dom";
 
-const Ring = () => {
-  const [filteredData, setFilteredData] = useState(
-    product.filter((item) => item.category === "Rings")
-  );
+const CardDetails = () => {
+  const { collectionType } = useParams();
+  const [filteredProduct, setFilteredProduct] = useState([]);
+
+  useEffect(() => {
+    const filteredProduct = product.filter(
+      (item) => item.category === collectionType
+    );
+    setFilteredProduct(filteredProduct);
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,17 +20,17 @@ const Ring = () => {
 
   const filterByGender = (gender) => {
     if (gender === "all") {
-      setFilteredData(product.filter((item) => item.category === "Rings"));
+      setFilteredProduct(product.filter((item) => item.category === "Rings"));
     } else {
       const filtered = product.filter(
         (item) => item.category === "Rings" && item.gender === gender
       );
-      setFilteredData(filtered);
+      setFilteredProduct(filtered);
     }
   };
 
   const sortByPrice = (order) => {
-    const sortedData = [...filteredData];
+    const sortedData = [...filteredProduct];
     if (order === "asc") {
       sortedData.sort((a, b) => a.price - b.price);
     } else if (order === "desc") {
@@ -34,7 +41,6 @@ const Ring = () => {
   const handleBack = () => {
     window.history.back();
   };
-
   return (
     <>
       <i
@@ -49,27 +55,31 @@ const Ring = () => {
         >
           All Products
         </button>
-        <button
-          onClick={() => filterByGender("Men")}
-          className="font-playfair-display w-[126px] h-[37px] bg-[#fef5ee] text-[#18544d] text-center rounded-xl border-[1px] border-[#13524a] hover:bg-[#13524a] hover:text-white"
-        >
-          Men
-        </button>
-        <button
-          onClick={() => filterByGender("Women")}
-          className="font-playfair-display w-[126px] h-[37px] bg-[#fef5ee] text-[#18544d] text-center rounded-xl border-[1px] border-[#13524a] hover:bg-[#13524a] hover:text-white"
-        >
-          Women
-        </button>
+        {collectionType === `Rings` && (
+          <>
+            <button
+              onClick={() => filterByGender("Men")}
+              className="font-playfair-display w-[126px] h-[37px] bg-[#fef5ee] text-[#18544d] text-center rounded-xl border-[1px] border-[#13524a] hover:bg-[#13524a] hover:text-white"
+            >
+              Men
+            </button>
+            <button
+              onClick={() => filterByGender("Women")}
+              className="font-playfair-display w-[126px] h-[37px] bg-[#fef5ee] text-[#18544d] text-center rounded-xl border-[1px] border-[#13524a] hover:bg-[#13524a] hover:text-white"
+            >
+              Women
+            </button>
+          </>
+        )}
 
         <button
-          onClick={() => setFilteredData(sortByPrice("asc"))}
+          onClick={() => setFilteredProduct(sortByPrice("asc"))}
           className="font-playfair-display w-[126px] h-[37px] bg-[#fef5ee] text-[#18544d] text-center rounded-xl border-[1px] border-[#13524a] hover:bg-[#13524a] hover:text-white"
         >
           Low to High
         </button>
         <button
-          onClick={() => setFilteredData(sortByPrice("desc"))}
+          onClick={() => setFilteredProduct(sortByPrice("desc"))}
           className="font-playfair-display w-[126px] h-[37px] bg-[#fef5ee] text-[#18544d] text-center rounded-xl border-[1px] border-[#13524a] hover:bg-[#13524a] hover:text-white"
         >
           High to Low
@@ -77,9 +87,9 @@ const Ring = () => {
       </div>
 
       <div className="w-full h-auto grid grid-cols-3 gap-44 justify-center justify-items-center mt-24 ">
-        {filteredData.map((ring, index) => (
+        {filteredProduct.map((ring, index) => (
           <div key={index}>
-            <Link to={`/ring/${ring.id}`}>
+            <Link to={`${ring.id}`}>
               <div className="w-[300px] h-[300px] bg-[#13524a] rounded-xl shadow-md">
                 <div className="w-full h-[200px]">
                   <img
@@ -108,4 +118,4 @@ const Ring = () => {
   );
 };
 
-export default Ring;
+export default CardDetails;
