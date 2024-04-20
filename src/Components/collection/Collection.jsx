@@ -103,7 +103,9 @@ const Collection = () => {
       {showSecondSet && (
         <>
           <div className="w-full h-[400px] flex items-center justify-around mt-12">
+          
             <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative ">
+            <Link to={`/collection/Pearl`}>
               <img
                 className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
                 src={pearl}
@@ -114,6 +116,7 @@ const Collection = () => {
                   PEARL
                 </h1>
               </div>
+              </Link>
             </div>
 
             <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative  ">

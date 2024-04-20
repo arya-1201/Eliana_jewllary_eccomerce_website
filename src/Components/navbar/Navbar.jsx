@@ -3,9 +3,13 @@ import search from "/assets/images/search.png";
 import heart from "/assets/images/heart.png";
 import shoppingBag from "/assets/images/shopping-bag.png";
 import image from "/assets/images/image.png";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 const Navbar = () => {
+
+  let items = useSelector((state)=>state.cart)
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -53,10 +57,12 @@ const Navbar = () => {
         <div className="text-[#15534b] font-normal text-6xl leading-20 mr-32 font-moglan">
           <h1>Eliana</h1>
         </div>
-        <div className="flex gap-10">
+        <div className="flex gap-10 relative">
           <img src={search} alt="" className="w-8 h-8 hover:scale-125" />
           <img src={heart} alt="" className="w-8 h-8 hover:scale-125" />
-          <img src={shoppingBag} alt="" className="w-8 h-8 hover:scale-125" />
+          <Link to={"/Cart"}>
+          <img src={shoppingBag} alt="" className="w-8 h-8 hover:scale-125 " /><sup className="absolute top-0 left-44" >{items.length}</sup>
+          </Link>
           <img
             className="w-8 h-8 rounded-full border-2 border-green-700 hover:scale-125"
             src={image}

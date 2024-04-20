@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import product from "../Components/Data";
+import product from "../Data";
 import { Link } from "react-router-dom";
 
 const CardDetails = () => {
@@ -20,10 +20,10 @@ const CardDetails = () => {
 
   const filterByGender = (gender) => {
     if (gender === "all") {
-      setFilteredProduct(product.filter((item) => item.category === "Rings"));
+      setFilteredProduct(product.filter((item) => item.category === collectionType));
     } else {
       const filtered = product.filter(
-        (item) => item.category === "Rings" && item.gender === gender
+        (item) => item.category === collectionType && item.gender === gender
       );
       setFilteredProduct(filtered);
     }

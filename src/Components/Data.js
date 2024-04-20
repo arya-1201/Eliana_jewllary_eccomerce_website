@@ -2,7 +2,7 @@ let product = [
   {
     id: 1,
     name: "Bold Statement Finger Ring For Men",
-    description:
+    productDetails:
       "This bold and sophisticated finger ring for men featuring nine precious gemstones and diamonds is a standout accessory for any occasion. The stylish design is perfect for the modern man who appreciates a distinctive look for his daily wear.",
     price: 10000.0,
     quantity: 1,
@@ -16,7 +16,7 @@ let product = [
   {
     id: 2,
     name: "Hexagonal Maze Finger Ring For Men",
-    description:
+    productDetails:
       "Express your uniquely individualistic style with this quirky hexagonal diamond center finger ring which makes a statement of its own and ensures you always stand out in a crowd. Set your own trends and bask in glory daily with this fashionable ring.",
     price: 8000.0,
     quantity: 1,
@@ -30,7 +30,7 @@ let product = [
   {
     id: 3,
     name: "Glamourous Dazzle Finger Ring For Men",
-    description:
+    productDetails:
       "An arresting design of diamonds with a tiny silver center sets this ring apart. A symbol of refined elegance, this ring effortlessly transitions from formal occasions to casual settings, adding a touch of sophistication to your everyday style.",
     price: 12000.0,
     quantity: 1,
@@ -44,7 +44,7 @@ let product = [
   {
     id: 4,
     name: "Vogueish Charm Platinum Ring For Men",
-    description:
+    productDetails:
       "xuding vogueish charm and endearing allure, this platinum ring is meticulously crafted for the connoisseur with refined taste. Infusing an extra edge of sophistication, it transcends the fleeting trends.",
     price: 15000.0,
     quantity: 1,
@@ -58,7 +58,7 @@ let product = [
   {
     id: 5,
     name: "Dazzling Radiance Finger Ring For Men",
-    description:
+    productDetails:
       "A stunningly patterned rose gold band gently nestles the dazzling brilliance of diamonds in this one of a kind finger ring which exudes luxurious panache. Pair it effortlessly with any daily attire to make your mark with this symbol of confidence.",
     price: 18000.0,
     quantity: 1,
@@ -72,7 +72,7 @@ let product = [
   {
     id: 6,
     name: "Bold Star Power Ring",
-    description:
+    productDetails:
       "Don't shy away from making an edgy statement when you adorn this bold ring with black enamel and star motif!",
     price: 20000.0,
     quantity: 1,
@@ -86,7 +86,7 @@ let product = [
   {
     id: 7,
     name: "Sublime Enamelled Ring for Men",
-    description:
+    productDetails:
       "This sublime ring is simple yet impactful accessory for the man who wishes to make an unforgettable style statement wherever he goes!",
     price: 22000.0,
     quantity: 1,
@@ -100,7 +100,7 @@ let product = [
   {
     id: 8,
     name: "Dapper Charm Ring For Men",
-    description:
+    productDetails:
       "Bring in dapper charm to your look with this enchanting men's gold ring, a meaningful symbol of contemporary allure and timeless sophistication.",
     price: 25000.0,
     quantity: 1,
@@ -114,7 +114,7 @@ let product = [
   {
     id: 9,
     name: "Gleaming Flower Diamond Ring ",
-    description:
+    productDetails:
       "The lush beauty of this floral ring is designed to give your style a flourish of glamour. Indulge in the grace of nature and leave everyone bedazzled with this piece.",
     price: 10000.0,
     quantity: 1,
@@ -127,7 +127,7 @@ let product = [
   {
     id: 10,
     name: "Shimmering Flower Diamond Ring",
-    description:
+    productDetails:
       "This ring carries a flower motif that's encrusted with shimmering diamonds. Its artistic allure is just what you need to elevate your daily style!",
     price: 8000.0,
     quantity: 1,
@@ -140,7 +140,7 @@ let product = [
   {
     id: 11,
     name: "Eclectic Squares Diamond Ring",
-    description:
+    productDetails:
       "Unique, eclectic and oh, so charming! The square patterns and dazzling diamonds in this ring will never fail to make you stand out from the crowd!",
     price: 12000.0,
     quantity: 1,
@@ -153,7 +153,7 @@ let product = [
   {
     id: 12,
     name: "Curvy Classy Gold and Diamond Ring",
-    description:
+    productDetails:
       "Classy, curvy and built to last, this glossy finished diamond ring will go great with your everyday wear. The perfect gift for the everyday woman.",
     price: 15000.0,
     quantity: 1,
@@ -166,7 +166,7 @@ let product = [
   {
     id: 13,
     name: "Classy Hexagonal Ring",
-    description:
+    productDetails:
       "Sleek and striking, this geometric ring with carvings is designed to illuminate your everyday style. The perfect accessory for fashionable lady.",
     price: 18000.0,
     quantity: 1,
@@ -179,7 +179,7 @@ let product = [
   {
     id: 14,
     name: "Subtle Stacked Ring",
-    description:
+    productDetails:
       "A unique ring for a unique personality! Look sophisticated in every outfit on every occasion when you adorn this stacked ring!",
     price: 20000.0,
     quantity: 1,
@@ -192,7 +192,7 @@ let product = [
   {
     id: 15,
     name: "Knotting Stackable Ring",
-    description:
+    productDetails:
       "This set has a central ring with a charming knot pattern, stacked above three minimal rings. This glamorous design is impossible to ignore!",
     price: 22000.0,
     quantity: 1,
@@ -205,7 +205,7 @@ let product = [
   {
     id: 16,
     name: "Shimmering Two-head Diamond Ring",
-    description:
+    productDetails:
       "The perfect choice for your next party ensemble, this two-head ring has been crafted masterfully to complement all your moods.",
     price: 25000.0,
     quantity: 1,
@@ -218,7 +218,7 @@ let product = [
   {
     id: 17,
     name: "Surreal Artistic Ring",
-    description:
+    productDetails:
       "Add a touch of grace to your new beginning with this surreal ring. Crafted beautifully, this design is artistic and charming and calls for attention.",
     price: 30000.0,
     quantity: 1,
@@ -231,7 +231,7 @@ let product = [
   {
     id: 18,
     name: "Quiet Promises Finger Ring",
-    description:
+    productDetails:
       "Make a promise to yourself to always stay on top of your fashion game and flaunt your charming style with this finger ring that completes your look. The only piece of jewellery you'll need to make your mark, this ring is designed for every day.",
     price: 35000.0,
     quantity: 1,
@@ -245,7 +245,7 @@ let product = [
   {
     name: "Interwoven Gold Drop Earrings",
     productDetails:
-      "With these hypnotic danglers, making an unforgettable style statement is effortlessly easy. Make this brilliant pair a staple in your collection for special occasions!",
+      "With these hypnotic danglers, making an unforgettable style statement is effortlessly easy. Make this brilliant pair a staple in your Collection for special occasions!",
     gender: "Women",
     id: 19,
     quantity: 1,
@@ -383,7 +383,7 @@ let product = [
   {
     name: "Netted Miracles Hoop Earrings",
     productDetails:
-      "An eye catching fishnet design makes these captivating hoop earrings the piece de resistance of your jewellery collection. A unique design that goes perfectly with any outfit of your choice, you can enjoy these earrings daily, without any hesitation.",
+      "An eye catching fishnet design makes these captivating hoop earrings the piece de resistance of your jewellery Collection. A unique design that goes perfectly with any outfit of your choice, you can enjoy these earrings daily, without any hesitation.",
     gender: "Women",
     productType: "Hoops",
     occasion: "Office Wear",
@@ -450,6 +450,7 @@ let product = [
     image: "/assets/images/Earrings/Earrings15.webp",
     price: 40000,
     materialColor: "yellow",
+    occasion: "Formal",
   },
   {
     name: "Elegant Flower Diamond Pendant",
@@ -462,6 +463,9 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent1.webp",
     price: 42000,
+    quantity: 1,
+    materialColor: "yellow",
+    occasion: "Formal",
   },
   {
     name: "Minimalistic Dazzle Diamond Pendant",
@@ -474,6 +478,8 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent2.webp",
     price: 50000,
+    materialColor: "yellow",
+    quantity: 1,
   },
   {
     name: "Radiant  Diamond Snowflake Pendant",
@@ -486,6 +492,9 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent3.webp",
     price: 45000,
+    occasion: "Formal",
+    materialColor: "yellow",
+    quantity: 1,
   },
   {
     name: "Gilded Heartbeat Diamond  Pendant",
@@ -498,6 +507,9 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent4.webp",
     price: 20000,
+    occasion: "Formal",
+    materialColor: "yellow",
+    quantity: 1,
   },
   {
     name: "Simply Elegant Diamond Pendant",
@@ -510,6 +522,9 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent5.webp",
     price: 20000,
+    occasion: "Formal",
+    materialColor: "yellow",
+    quantity: 1,
   },
   {
     name: "Geometric Pattern Rose Gold Pendant",
@@ -522,6 +537,8 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent6.webp",
     price: 35000,
+    materialColor: "yellow",
+    quantity: 1,
   },
   {
     name: "Dazzling Dahlia Ruby Pendant",
@@ -534,6 +551,8 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent7.webp",
     price: 15000,
+    materialColor: "yellow",
+    quantity: 1,
   },
   {
     name: "Gilded Spiral Diamond Snail Pendant",
@@ -546,6 +565,9 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent8.webp",
     price: 20500,
+    occasion: "Formal",
+    materialColor: "yellow",
+    quantity: 1,
   },
   {
     name: "Cute Floral Diamond Pendant",
@@ -558,6 +580,9 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent9.webp",
     price: 10000,
+    occasion: "Formal",
+    materialColor: "yellow",
+    quantity: 1,
   },
   {
     name: "Charming Yellow Gold Leaf Pendant",
@@ -570,6 +595,9 @@ let product = [
     category: "pendants",
     image: "/assets/images/Pendents/Pendent10.webp",
     price: 8000,
+    occasion: "Formal",
+    materialColor: "yellow",
+    quantity: 1,
   },
   {
     id: 44,
@@ -582,6 +610,7 @@ let product = [
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet1.png",
     price: 13500,
+    materialColor: "yellow",
     category: "bracelet",
   },
   {
@@ -595,6 +624,7 @@ let product = [
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet2.png",
     price: 12000,
+    materialColor: "yellow",
     category: "bracelet",
   },
   {
@@ -608,6 +638,7 @@ let product = [
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet3.png",
     price: 9200,
+    materialColor: "yellow",
     category: "bracelet",
   },
   {
@@ -621,6 +652,7 @@ let product = [
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet4.png",
     price: 35000,
+    materialColor: "yellow",
     category: "bracelet",
   },
   {
@@ -634,32 +666,36 @@ let product = [
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet5.png",
     price: 10000,
+    materialColor: "yellow",
+
     category: "bracelet",
   },
   {
     id: 49,
     name: "Heartstring Diamond Bracelet",
     productDetails:
-      "Communicate your love language with our uncomplicated designs from the latest Dots & Dashes collection!",
+      "Communicate your love language with our uncomplicated designs from the latest Dots & Dashes Collection!",
     gender: "Women",
     occasion: "Casual Wear",
     karatage: 18,
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet6.png",
     price: 23000,
+    materialColor: "yellow",
     category: "bracelet",
   },
   {
     id: 50,
     name: "Life is Roses Diamond Bracelet",
     productDetails:
-      "A reminder of budding love and youthful mirth, celebrate your beautiful journey of love with our 'Pretty in Pink' collection",
+      "A reminder of budding love and youthful mirth, celebrate your beautiful journey of love with our 'Pretty in Pink' Collection",
     gender: "Women",
     occasion: "Modern Wear",
     karatage: 18,
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet7.png",
     price: 22500,
+    materialColor: "yellow",
     category: "bracelet",
   },
   {
@@ -673,6 +709,7 @@ let product = [
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet8.png",
     price: 40000,
+    materialColor: "yellow",
     category: "bracelet",
   },
   {
@@ -686,6 +723,7 @@ let product = [
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet9.png",
     price: 30000,
+    materialColor: "yellow",
     category: "bracelet",
   },
   {
@@ -699,6 +737,7 @@ let product = [
     quantity: 1,
     image: "/assets/images/Bracelet/bracelet10.png",
     price: 20000,
+    materialColor: "yellow",
     category: "bracelet",
   },
   {
@@ -713,6 +752,7 @@ let product = [
     price: 60938,
     quantity: 1,
     category: "necklace",
+    materialColor: "yellow",
     image: "/assets/images/Necklace/necklace1.png",
   },
   {
@@ -727,6 +767,7 @@ let product = [
     price: 92045,
     quantity: 1,
     category: "necklace",
+    materialColor: "yellow",
     image: "/assets/images/Necklace/necklace2.png",
   },
   {
@@ -741,6 +782,7 @@ let product = [
     price: 129996,
     quantity: 1,
     category: "necklace",
+    materialColor: "yellow",
     image: "/assets/images/Necklace/necklace3.png",
   },
   {
@@ -755,13 +797,14 @@ let product = [
     price: 301688,
     quantity: 1,
     category: "necklace",
+    materialColor: "yellow",
     image: "/assets/images/Necklace/necklace4.png",
   },
   {
     id: 58,
     name: "A Golden Nest Diamond Necklace",
     productDetails:
-      'Let the flow of your life be as graceful as the glide of our beautiful designs in the "Go with the Flow" collection!',
+      'Let the flow of your life be as graceful as the glide of our beautiful designs in the "Go with the Flow" Collection!',
     Collection: "Bestsellers",
     gender: "Women",
     occasion: "Modern Wear",
@@ -769,6 +812,7 @@ let product = [
     price: 67614,
     quantity: 1,
     category: "necklace",
+    materialColor: "yellow",
     image: "/assets/images/Necklace/necklace5.png",
   },
   {
@@ -783,6 +827,7 @@ let product = [
     price: 54251,
     quantity: 1,
     category: "necklace",
+    materialColor: "yellow",
     image: "/assets/images/Necklace/necklace6.png",
   },
   {
@@ -792,11 +837,11 @@ let product = [
       "This Ganesha necklace will make for an auspicious gift for your loved one. The simple, abstract design makes it a great choice for everyday wear.",
     Collection: "Padmaja",
     gender: "Unisex",
-    "Product Type": "STUDDED",
     occasion: "Modern Wear",
     price: 82097,
     quantity: 1,
     category: "necklace",
+    materialColor: "yellow",
     image: "/assets/images/Necklace/necklace7.png",
   },
   {
@@ -811,13 +856,14 @@ let product = [
     price: 208955,
     quantity: 1,
     category: "necklace",
+    materialColor: "yellow",
     image: "/assets/images/Necklace/necklace8.png",
   },
   {
     id: 62,
     name: "In the Flow Diamond Necklace",
     productDetails:
-      'Let the flow of your life be as graceful as the glide of our beautiful designs in the "Go with the Flow" collection!',
+      'Let the flow of your life be as graceful as the glide of our beautiful designs in the "Go with the Flow" Collection!',
     Collection: "Bestsellers",
     gender: "Women",
     occasion: "Modern Wear",
@@ -825,7 +871,148 @@ let product = [
     price: 93272,
     quantity: 1,
     category: "necklace",
+    materialColor: "yellow",
     image: "/assets/images/Necklace/necklace9.png",
+  },
+  {
+    id: 63,
+    name: "Riona Pearl Stud Earrings",
+    productDetails:
+      "Dainty yet elegant, these stud earrings are timeless in every possible way Treat yourself to these beauties today!",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Swarnam",
+    gender: "Women",
+    price: "22054",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl1.png",
+    occasion: "Formal",
+  },
+  {
+    id: 64,
+    name: "Classy Elegant Pearl Pendant",
+    productDetails:
+      "Whether your attire is western or traditional, this Gold and Pearl pendant flawlessly complements any outfit. You don't need an occasion when you have the perfect accessory! The chain in the image is for representative purpose only and the product comes without a chain.",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Bestsellers",
+    gender: "Women",
+    price: "9428",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl2.png",
+    occasion: "Formal",
+  },
+  {
+    id: 65,
+    name: "Sophisticated Pearl Drop Earrings",
+    productDetails:
+      "These classic drop earrings are enticing and elegant. The shimmering cubic zirconias and pristine pearls are guaranteed to highlight your natural beauty.",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Padmaja",
+    gender: "Women",
+    price: "30994",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl3.png",
+    occasion: "Formal",
+  },
+  {
+    id: 66,
+    name: "Minimalist  Yellow Gold And Pearl Studs",
+    productDetails:
+      "The lone luminous pearl in these stud earrings can enchant a room full of people. Embrace the elegance of this pair by making it a part of your daily style.",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Bestsellers",
+    gender: "Women",
+    price: "11463",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl4.png",
+    occasion: "Formal",
+  },
+  {
+    id: 67,
+    name: "Graceful Pearl and Diamond Pendant",
+    productDetails:
+      "Add a touch of elegance to your style with this pendant. The chain in this image is for representative purpose only and the product comes without a chain.",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Padmaja",
+    gender: "Women",
+    price: "34116",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl5.png",
+    occasion: "Formal",
+  },
+  {
+    id: 68,
+    name: "Dazzling Pearl and Diamond Earrings",
+    productDetails:
+      "Radiate with an unmatched glamour or keep it understated at elegant affairs with these lovely earrings, featuring shimmery diamonds and pearls",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Padmaja",
+    gender: "Women",
+    price: "40609",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl6.png",
+    occasion: "Formal",
+  },
+  {
+    id: 69,
+    name: "Pearls & Petals Gold Stud Earrings",
+    productDetails:
+      "The centerpiece of each earring features a bright and lustrous pearl, exuding a captivating sheen that reflects the light like shimmering moonbeams on a tranquil night. Surrounding each pearl is a delicate arrangement of gold petals, meticulously crafted to mimic the beauty of nature's blossoms.",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Bestsellers",
+    gender: "Women",
+    price: "36811",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl7.png",
+    occasion: "Formal",
+  },
+  {
+    id: 70,
+    name: "Cascading Pearl and Diamond Necklace",
+    productDetails:
+      "Elevate the opulence of grand gatherings with this pearls and diamonds necklace. The cascading elegant design is sure to leave the crowd hypnotised.",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Bestsellers",
+    gender: "Women",
+    price: "69726",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl8.png",
+    occasion: "Formal",
+  },
+  {
+    id: 71,
+    name: "Ethereal Diamond and Pearl Earrings",
+    productDetails:
+      "Embrace your graceful side with these blooming, diamond encrusted drop earrings, with a dollop of pearl hanging from a slender gold chain!",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Bestsellers",
+    gender: "Women",
+    price: "79276",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl9.png",
+    occasion: "Formal",
+  },
+  {
+    id: 72,
+    name: "Tejaswi Necklace Set",
+    productDetails:
+      "This inverted lotus pendant with enamel detailing is truly a work of art 7ith the bloom rendered to life like beauty with enamel details. Seamless gradation between various hues and tints of pink add a touch of delicacy and unparalleled beauty to this floral piece!",
+    quantity: 1,
+    category: "Pearl",
+    Collection: "Alekhya",
+    gender: "Women",
+    price: "347199",
+    materialColor: "Gold",
+    image: "/assets/images/Pearl/Pearl10.png",
+    occasion: "Formal",
   },
 ];
 export default product;
