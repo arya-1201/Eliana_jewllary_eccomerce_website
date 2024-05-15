@@ -3,12 +3,14 @@ import search from "/assets/images/search.png";
 import heart from "/assets/images/heart.png";
 import shoppingBag from "/assets/images/shopping-bag.png";
 import image from "/assets/images/image.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   let items = useSelector((state) => state.cart.items);
   const [showProfile, setShowProfile] = useState(false);
+  const location = useLocation();
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -29,31 +31,38 @@ const Navbar = () => {
             <li className="flex gap-8 list-none leading-7 font-moglan">
               <a
                 className="no-underline text-[#15534b] font-normal text-xl hover:text-[#000000] hover:underline"
-                onClick={() => scrollToSection("home")}
+                onClick={() => {
+                  scrollToSection("home");
+                  navigate("home");
+                }}
               >
                 Home
               </a>
-              <a
-                href="#collection"
-                className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
-                onClick={() => scrollToSection("collection")}
-              >
-                Collection
-              </a>
-              <a
-                href="#blogs"
-                className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
-                onClick={() => scrollToSection("blogs")}
-              >
-                Blogs
-              </a>
-              <a
-                href="#contact"
-                className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
-                onClick={() => scrollToSection("contact")}
-              >
-                Contact
-              </a>
+              {location.pathname === "/home" && (
+                <>
+                  <a
+                    href="#collection"
+                    className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
+                    onClick={() => scrollToSection("collection")}
+                  >
+                    Collection
+                  </a>
+                  <a
+                    href="#blogs"
+                    className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
+                    onClick={() => scrollToSection("blogs")}
+                  >
+                    Blogs
+                  </a>
+                  <a
+                    href="#contact"
+                    className="no-underline text-[#15534b] font-normal text-xl  hover:text-[#000000] hover:underline"
+                    onClick={() => scrollToSection("contact")}
+                  >
+                    Contact
+                  </a>
+                </>
+              )}
             </li>
           </ul>
         </div>
