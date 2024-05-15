@@ -2,6 +2,7 @@ import React from "react";
 import prpose from "/assets/images/prpose.png";
 import propose1 from "/assets/images/propose1.png";
 import platinumRing from "/assets/images/platinum ring 1.png";
+import { Link } from "react-router-dom";
 
 const Engagement = () => {
   return (
@@ -30,9 +31,11 @@ const Engagement = () => {
             our collection <br />
             embodies timeless beauty and exceptional craftsmanship
           </p>
+          <Link to={`/collection/couplering`}>
           <button className="h-[54px] w-[187px] text-[22px] ml-20 mt-14 font-moglan bg-[#fef5ee] border-[1px] border-[#13524a] rounded-md text-[#13524a] hover:bg-[#13524a] hover:text-white ">
             Shop Now
           </button>
+          </Link>
         </div>
       </div>
     </div>

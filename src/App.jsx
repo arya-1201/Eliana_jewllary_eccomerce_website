@@ -6,6 +6,7 @@ import CardDetails from "./Components/carddetails/CardDetails.jsx";
 import Cart from "./Components/Cart/Cart.jsx";
 import { Provider } from "react-redux";
 import store from "./Components/Store.js";
+import FavoritesList from "./Components/FavoritesList/FavoritesList.jsx";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           element={<ProductDescription />}
         />
         <Route path="/Cart" element={<Cart/>}/>
+        <Route path="/favorites" element={<FavoritesList/>}/>
+        
+
       </Routes>
     </BrowserRouter>
     </Provider>

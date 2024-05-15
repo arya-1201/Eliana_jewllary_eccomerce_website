@@ -24,31 +24,6 @@ const Hero = () => {
           JEWELLERYS
         </h1>
       </div>
-      <div class="absolute left-[1450px] top-[300px] flex flex-col gap-5">
-        <div
-          class="w-[30px] h-[30px] rounded-full flex justify-center items-center cursor-pointer relative border-2 text-[#15534b]"
-          id="btn1"
-        >
-          1
-        </div>
-      </div>
-      <div class="absolute left-[1450px] top-[350px] flex flex-col gap-5">
-        <div
-          class="w-[30px] h-[30px] rounded-full flex justify-center items-center cursor-pointer relative border-2 text-[#15534b]"
-          id="btn1"
-        >
-          2
-        </div>
-      </div>
-      <div class="absolute left-[1450px] top-[400px] flex flex-col gap-5">
-        <div
-          class="w-[30px] h-[30px] rounded-full flex justify-center items-center cursor-pointer relative border-2 text-[#15534b]"
-          id="btn1"
-        >
-          3
-        </div>
-      </div>
-
       <div class="absolute w-full h-[45px] bg-[#15534b] top-[800px] left-0 overflow-hidden">
         <h1
           id="scroll-text"

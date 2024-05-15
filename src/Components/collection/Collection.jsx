@@ -41,111 +41,115 @@ const Collection = () => {
         </div>
 
         <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative  ">
-        <Link to={`/collection/earrings`}>
-          <img
-            className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
-            src={girl3}
-          ></img>
-          <div className="group">
-            <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
-            <h1 className=" absolute text-[40px] top-[230px] left-6 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
-              EARRINGS
-            </h1>
-          </div>  
+          <Link to={`/collection/earrings`}>
+            <img
+              className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
+              src={girl3}
+            ></img>
+            <div className="group">
+              <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
+              <h1 className=" absolute text-[40px] top-[230px] left-6 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
+                EARRINGS
+              </h1>
+            </div>
           </Link>
         </div>
 
         <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative  ">
-        <Link to={`collection/pendants`}>
-          <img
-            className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
-            src={girl4}
-          ></img>
-          <div className="group">
-            <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
-            <h1 className=" absolute text-[40px] top-[230px] left-6 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
-              PENDANTS
-            </h1>
-          </div>
+          <Link to={`collection/pendants`}>
+            <img
+              className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
+              src={girl4}
+            ></img>
+            <div className="group">
+              <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
+              <h1 className=" absolute text-[40px] top-[230px] left-6 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
+                PENDANTS
+              </h1>
+            </div>
           </Link>
         </div>
 
         <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative">
-        <Link to={`/collection/bracelet`}>
-          <img
-            className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
-            src={girl5}
-          ></img>
-          <div className="group">
-            <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
-            <h1 className=" absolute text-[40px] top-[230px] left-4 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
-              BRACELETS
-            </h1>
-          </div>
+          <Link to={`/collection/bracelet`}>
+            <img
+              className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
+              src={girl5}
+            ></img>
+            <div className="group">
+              <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
+              <h1 className=" absolute text-[40px] top-[230px] left-4 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
+                BRACELETS
+              </h1>
+            </div>
           </Link>
         </div>
 
         <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative">
-        <Link to={`/collection/necklace`}>
-          <img
-            className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
-            src={girl6}
-          ></img>
-          <div className="group">
-            <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
-            <h1 className=" absolute text-[40px] top-[230px] left-4 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
-              NECKLACE
-            </h1>
-          </div>
+          <Link to={`/collection/necklace`}>
+            <img
+              className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
+              src={girl6}
+            ></img>
+            <div className="group">
+              <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
+              <h1 className=" absolute text-[40px] top-[230px] left-4 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
+                NECKLACE
+              </h1>
+            </div>
           </Link>
         </div>
       </div>
       {showSecondSet && (
         <>
           <div className="w-full h-[400px] flex items-center justify-around mt-12">
-          
             <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative ">
-            <Link to={`/collection/Pearl`}>
-              <img
-                className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
-                src={pearl}
-              ></img>
-              <div className="group">
-                <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300"></div>
-                <h1 className=" absolute text-[40px] top-[230px] left-16 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
-                  PEARL
-                </h1>
-              </div>
+              <Link to={`/collection/Pearl`}>
+                <img
+                  className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
+                  src={pearl}
+                ></img>
+                <div className="group">
+                  <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300"></div>
+                  <h1 className=" absolute text-[40px] top-[230px] left-16 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
+                    PEARL
+                  </h1>
+                </div>
               </Link>
             </div>
 
             <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative  ">
-              <img
-                className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
-                src={bridal}
-              ></img>
-              <div className="group">
-                <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
-                <h1 className=" absolute text-[40px] top-[230px] left-16 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
-                  BRIDAL
-                </h1>
-              </div>
+              <Link to={`/collection/Bridal`}>
+                <img
+                  className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
+                  src={bridal}
+                ></img>
+                <div className="group">
+                  <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
+                  <h1 className=" absolute text-[40px] top-[230px] left-16 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
+                    BRIDAL
+                  </h1>
+                </div>
+              </Link>
             </div>
 
             <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative  ">
-              <img
-                className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
-                src={Anklet}
-              ></img>
-              <div className="group">
-                <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
-                <h1 className=" absolute text-[40px] top-[230px] left-12 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
-                  ANKLET
-                </h1>
-              </div>
+              <Link to={`/collection/anklet`}>
+                <img
+                  className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
+                  src={Anklet}
+                ></img>
+                <div className="group">
+                  <div className="absolute top-[213px] w-full h-[100px] bg-[#13524a] rounded-b-xl opacity-30 hover:h-full hover:top-0 hover:rounded-t-lg transition-all duration-300 "></div>
+                  <h1 className=" absolute text-[40px] top-[230px] left-12 text-white group-hover:translate-y-[-100px] transition-all duration-300 font-moglan">
+                    ANKLET
+                  </h1>
+                </div>
+              </Link>
             </div>
 
             <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative">
+            <Link to={`/collection/gemstone`}>
               <img
                 className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
                 src={gemstone}
@@ -156,9 +160,11 @@ const Collection = () => {
                   GEMSTONE
                 </h1>
               </div>
+              </Link>
             </div>
 
             <div className="w-[229px] h-[313px] bg-[#13524a] rounded-xl relative">
+            <Link to={`/collection/bead`}>
               <img
                 className="rounded-xl w-[225px] h-[309px] object-cover mx-0.5 my-0.5 "
                 src={bead}
@@ -169,6 +175,7 @@ const Collection = () => {
                   BEAD
                 </h1>
               </div>
+              </Link>
             </div>
           </div>
         </>

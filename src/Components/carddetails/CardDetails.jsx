@@ -2,17 +2,21 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import product from "../Data";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addToFavorites, removeFromFavorites } from "../CartSlice";
 
 const CardDetails = () => {
   const { collectionType } = useParams();
   const [filteredProduct, setFilteredProduct] = useState([]);
+  const dispatch = useDispatch();
+  const favorites = useSelector((state) => state.cart.favorites);
 
   useEffect(() => {
     const filteredProduct = product.filter(
       (item) => item.category === collectionType
     );
     setFilteredProduct(filteredProduct);
-  }, []);
+  }, [collectionType]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,7 +24,9 @@ const CardDetails = () => {
 
   const filterByGender = (gender) => {
     if (gender === "all") {
-      setFilteredProduct(product.filter((item) => item.category === collectionType));
+      setFilteredProduct(
+        product.filter((item) => item.category === collectionType)
+      );
     } else {
       const filtered = product.filter(
         (item) => item.category === collectionType && item.gender === gender
@@ -38,14 +44,31 @@ const CardDetails = () => {
     }
     return sortedData;
   };
+
   const handleBack = () => {
     window.history.back();
   };
+
+  const handleAddToFavorites = (itemId) => {
+    const itemToAdd = filteredProduct.find((item) => item.id === itemId);
+    if (itemToAdd) {
+      dispatch(addToFavorites(itemToAdd));
+    }
+  };
+
+  const isFavorite = (itemId) => {
+    return favorites.some((item) => item.id === itemId);
+  };
+
+  const handleRemoveFromFavorites = (itemId) => {
+    dispatch(removeFromFavorites(itemId));
+  };
+
   return (
     <>
       <i
         onClick={handleBack}
-        class="fa-solid fa-arrow-left text-[50px] text-[#13542a] mt-3 ml-3 cursor-pointer"
+        className="fa-solid fa-arrow-left text-[50px] text-[#13542a] mt-3 ml-3 cursor-pointer"
       ></i>
 
       <div className="flex gap-5 ml-12 mt-12 ">
@@ -89,8 +112,8 @@ const CardDetails = () => {
       <div className="w-full h-auto grid grid-cols-3 gap-44 justify-center justify-items-center mt-24 ">
         {filteredProduct.map((ring, index) => (
           <div key={index}>
-            <Link to={`${ring.id}`}>
-              <div className="w-[300px] h-[300px] bg-[#13524a] rounded-xl shadow-md">
+            <div className="w-[300px] h-[300px] bg-[#13524a] rounded-xl shadow-md">
+              <Link to={`${ring.id}`}>
                 <div className="w-full h-[200px]">
                   <img
                     className="object-center w-full h-[200px] rounded-xl"
@@ -98,19 +121,27 @@ const CardDetails = () => {
                     alt={ring.name}
                   />
                 </div>
-                <div className="w-full h-full">
-                  <h1 className="text-[16px] font-playfair-display text-white mt-2 ml-2">
-                    {ring.name}
+              </Link>
+              <div className="w-full h-full">
+                <h1 className="text-[16px] font-playfair-display text-white mt-2 ml-2">
+                  {ring.name}
+                </h1>
+                <div className="mt-6 ml-2 flex justify-between items-center">
+                  <h1 className="text-[16px] font-moglan text-white">
+                    INR:{ring.price}.00
                   </h1>
-                  <div className="mt-6 ml-2 flex justify-between items-center">
-                    <h1 className="text-[16px] font-moglan text-white">
-                      INR:{ring.price}.00
-                    </h1>
-                    <i className="fa-solid fa-bag-shopping text-white text-[16px] mr-4"></i>
-                  </div>
+                  <i
+                    className="fa-regular fa-heart text-[16px] mr-4 cursor-pointer"
+                    style={{ color: isFavorite(ring.id) ? "red" : "white" }}
+                    onClick={() =>
+                      isFavorite(ring.id)
+                        ? handleRemoveFromFavorites(ring.id)
+                        : handleAddToFavorites(ring.id)
+                    }
+                  ></i>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         ))}
       </div>

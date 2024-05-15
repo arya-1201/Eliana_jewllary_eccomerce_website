@@ -14,7 +14,7 @@ const Cart = () => {
   const [formErrors, setFormErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
-  const productItems = useSelector((state) => state.cart);
+  const productItems = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
   const removeCartItem = (itemId) => {
@@ -53,7 +53,6 @@ const Cart = () => {
     setFormData({ ...formData, [name]: value });
    
     if (name === 'mobile' && value.trim().length === 10) {
-
       const otp = Math.floor(100000 + Math.random() * 900000);
       setFormData((prevData) => ({ ...prevData, otp: otp.toString() }));
     }
@@ -64,7 +63,6 @@ const Cart = () => {
     const errors = validateForm(formData);
     setFormErrors(errors);
     if (Object.keys(errors).length === 0) {
-
       setSubmitted(true);
     } else {
       setSubmitted(false);
