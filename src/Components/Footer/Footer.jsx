@@ -23,11 +23,10 @@ const Footer = () => {
       alert("Please enter a valid email address.");
       return;
     }
-    // If email is valid, show success message
     setShowMessage(true);
     setTimeout(() => {
       setShowMessage(false);
-    }, 3000); // Hide the message after 3 seconds
+    }, 3000);
   };
 
   return (
