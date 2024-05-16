@@ -1,16 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import search from "/assets/images/search.png";
 import heart from "/assets/images/heart.png";
 import shoppingBag from "/assets/images/shopping-bag.png";
-import image from "/assets/images/image.png";
+import userLogo from "/assets/images/userLogo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { signInWithPopup } from "firebase/auth";
+import { auth, provider } from "../../firebase/config";
+import { addUser, getUserData } from "../../firebase/services";
+import { UserProfileContext } from "../../contexts/userContext";
 
 const Navbar = () => {
   const navigate = useNavigate();
   let items = useSelector((state) => state.cart.items);
   const [showProfile, setShowProfile] = useState(false);
   const location = useLocation();
+  const { userProfile, setUserProfile } = useContext(UserProfileContext);
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -21,6 +26,34 @@ const Navbar = () => {
 
   const toggleProfile = () => {
     setShowProfile(!showProfile);
+  };
+
+  const handleGoogleSignIn = async () => {
+    await signInWithPopup(auth, provider)
+      .then(async (result) => {
+        const { user } = result;
+        if (user.email) {
+          const response = await getUserData(user.email);
+          localStorage.setItem("userProfile", JSON.stringify(response));
+          if (!response) {
+            const res = await addUser({ ...user?.providerData[0] });
+            localStorage.setItem("userProfile", JSON.stringify(res));
+          }
+          window.location.reload();
+        }
+      })
+      .catch(() => {});
+  };
+
+  const handleLogOut = () => {
+    const confirmed = window.confirm("Are you sure you want to Log out?");
+    if (confirmed) {
+      console.log("logout......");
+      localStorage.removeItem("userProfile");
+      window.location.reload();
+    } else {
+      console.log("Logout cancelled.");
+    }
   };
 
   return (
@@ -84,8 +117,8 @@ const Navbar = () => {
           </Link>
           <img
             className="w-8 h-8 rounded-full border-2 border-green-700 hover:scale-125 cursor-pointer"
-            src={image}
-            alt=""
+            src={userProfile?.photoURL || userLogo}
+            alt="User"
             onClick={toggleProfile}
           />
         </div>
@@ -114,8 +147,15 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="text-lg font-semibold mb-4">John Doe</div>
-          <div className="text-sm text-gray-600 mb-4">john.doe@example.com</div>
+          <div className="text-lg font-semibold mb-4">
+            {userProfile?.displayName || "......"}
+          </div>
+          {/* <div className="text-lg font-semibold mb-4"> */}
+          <button onClick={handleGoogleSignIn}>Login with Google</button>
+          {/* </div> */}
+          <div className="text-sm text-gray-600 mb-4">
+            {userProfile?.email || "......@gmail.com"}
+          </div>
           <div className="border-t border-gray-200 w-full mb-4"></div>
           <div className="flex flex-col">
             <Link to="/Cart" className="text-blue-500 hover:underline mb-2">
@@ -153,7 +193,7 @@ const Navbar = () => {
               </div>
             </Link>
             <button className="text-red-500 hover:underline focus:outline-none">
-              <div className="flex items-center">
+              <div className="flex items-center" onClick={handleLogOut}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5 mr-2"
