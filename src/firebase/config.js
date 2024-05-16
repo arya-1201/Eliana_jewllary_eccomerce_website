@@ -1,4 +1,3 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -24,21 +23,17 @@ export const provider = new GoogleAuthProvider();
 
 export const db = getFirestore(app);
 
-
-// // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
-
-// // Your web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: "AIzaSyB2hlI07VCQ-2YXFobd4b1G18Nov7R8GXg",
-//   authDomain: "eliana-fc5e4.firebaseapp.com",
-//   projectId: "eliana-fc5e4",
-//   storageBucket: "eliana-fc5e4.appspot.com",
-//   messagingSenderId: "567562225044",
-//   appId: "1:567562225044:web:ad4cc2539be7a01f863b81"
-// };
-
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+// {
+//     "phoneNumber": null,
+//     "id": "q8ITqijyMJEhWJeIEbRW",
+//     "uid": "104494384134089029230",
+//     "createdAt": {
+//         "seconds": 1715850953,
+//         "nanoseconds": 570000000
+//     },
+//     "email": "mavadiyadivyesh56@gmail.com",
+//     "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJOzeUPcRBma4sy6MBh8sdy54iStBXy9y7vVBrHzODqgDiJIc45=s96-c",
+//     "displayName": "Divyesh Mavadiya",
+//     "providerId": "google.com",
+//     "createdBy": "knpSrvWWiwU7YVTGQ7wN9oPyces1"
+// }
